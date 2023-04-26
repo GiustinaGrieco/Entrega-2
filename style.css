@@ -4,8 +4,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Enriqueta:wght@400;500&display=swap" rel="stylesheet">);
 
 :root {
-    --background: #060709
-    --text-withe: 
+    --background: #060709;
+    --text-withe-bold: #FFFFFF;
+    --text-withe: #979595;
+
     
 }
 
@@ -14,7 +16,7 @@
     padding: 0 ;
     margin: 0 ;
     box-sizing: border-box;
-    font-family: "enriqueta";
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     list-style-type: none;
 }
@@ -24,7 +26,7 @@ nav{
 }
 
 ul a {
-    color:#FFFFFF
+    color: var(--text-withe)
 }
 
 ul{
@@ -34,22 +36,32 @@ ul{
 }
 
 header{
-    background:#060709;
+    background: var(--background);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3 rem;
+    padding: 4 rem;
     height: 70px;
+    position: fixed;
+    top:0;
+    z-index: 2;
 }
 
 .logo{
     height: 90%;
+    margin-left: 1.5rem;
    
 }
 
-.guardar{
-    height: 40%;
+.favoritos{
+    height: 45%;
+    border-radius: 3px;
+    padding: 5px 5px;
+    margin-right: 3rem;
+    border: 2px solid var(--text-withe);
+    cursor: pointer;
+
 }
 
 .navbar,
@@ -60,10 +72,15 @@ header{
 }
 
 .navbar{
-    gap: 80px;
+    gap: 65px;
     height: 70px;
 }
 
 .navbar-list{
     gap: 30px;
+}
+
+.navbar-list li:first-child> a {
+    color:var(--text-withe);
+    font-weight: 6000;
 }
