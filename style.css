@@ -1,25 +1,26 @@
 /* Fuentes para la página */
-@import 
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Enriqueta:wght@400;500&display=swap" rel="stylesheet">);
+
+:root {
+    --background: #060709
+    --text-withe: 
+    
+}
 
 
 * {
     padding: 0 ;
     margin: 0 ;
     box-sizing: border-box;
-    display: flex;
-    font-family: sans-serif;
+    font-family: "enriqueta";
     text-decoration: none;
     list-style-type: none;
 }
 
 nav{
-    background:#060709;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1 rem;
-    width: 100%;
-    height: 70px;
+    
 }
 
 ul a {
@@ -30,11 +31,16 @@ ul{
     list-style: none;
     display: flex;
     gap: 10px;
-
 }
 
 header{
-    
+    background:#060709;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3 rem;
+    height: 70px;
 }
 
 .logo{
@@ -44,4 +50,20 @@ header{
 
 .guardar{
     height: 40%;
+}
+
+.navbar,
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    gap: 80px;
+    height: 70px;
+}
+
+.navbar-list{
+    gap: 30px;
 }
